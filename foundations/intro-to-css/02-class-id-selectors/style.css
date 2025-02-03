@@ -1,0 +1,23 @@
+.colorbackground {
+    background-color: #ffa7a7;
+    font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+}
+
+#blue-element {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.number3 {
+    font-size: 24px;
+}
+
+#special {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #80ff80;
+}

@@ -2,28 +2,83 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex; /* juist */
+  flex-direction: column; /* juist */
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  /* Added code */
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px; /* juist -- of padding: 0 16px; */
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex; /* juist */
+  justify-content: center; /* juist */
+  align-items: center; /* juist */
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  /* Added code to test out */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  width: 300px;
+}
+
+.wrapped { /* class: body in solution */
+  display: flex;
+  /* flex-direction: row; /* niet nodig */
+  /* justify-content: stretch; /* niet nodig */
+  flex: 1;
+}
+
+.cardwrapped { /* class: container in solution */
+  display: flex;
+  /* flex-direction: row;
+  justify-content:space-between;
+  align-content: space-evenly;
+  align-items: center;
+  flex: 1; */
+  flex-wrap: wrap;
+  gap: 32px; /* code added via solution, had ik niet */
+  padding: 48px; /* code added via solution, had ik ook niet */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li { /* was aanwezig in solution, had ik zelf niet */
+  margin-bottom: 16px;
 }

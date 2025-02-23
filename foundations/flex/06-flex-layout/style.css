@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*I added this to make my footer stick to the bottom. There is a different solution in the solution file. */
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,3 +28,61 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul {
+  /* text-decoration: none; */ /* I added this but it was unnecessary when you already have list-style or list-style-type */
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: #f8f8f8;
+}
+
+.left-links, .right-links {
+  gap: 16px;
+  display: flex;
+}
+
+.content, .input, .buttons { /* .input and .buttons can be removed and flex: 1 can be activated to make it cleaner */
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.buttons {
+  flex-direction: row;
+  padding: 8px;
+}
+
+/* SOLUTION according to solutions.css */
+
+/* .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+} */
+
